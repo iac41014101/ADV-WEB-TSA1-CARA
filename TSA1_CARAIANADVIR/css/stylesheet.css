@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body
+{
+  background: #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container
+{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 40px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+.container .left
+{
+  position: relative;
+  background: #000000;
+  padding: 40px;
+}
+.profile
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.profile .pic
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .pic img
+{
+  position: absolute;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile h2
+{
+  color: #fff;
+  font-size: 0.8cm;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 0.9cm;
+}
+.profile h2 span
+{
+  font-size: 0.4cm
+}
+.objective
+{
+  font-size: 0.6cm;
+  padding-top: 40px;
+}
+.obtitle
+{
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.objective span
+{
+  color: #fff;
+  font-size: 0.4cm;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 0.5cm;
+}
+.skills
+{
+  font-size: 0.6cm;
+  padding-top: 100px;
+}
+.sktitle
+{
+color: #fff;
+font-weight: 600;
+letter-spacing: 3px;
+}
+.skills ul
+{
+  position: relative;
+}
+.skills ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.skills ul li span
+{
+  color: #fff;
+  font-size: 0.4cm;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 0.5cm;
+}
+.contact
+{
+  font-size: 0.6cm;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.cnttitle
+{
+color: #fff;
+font-weight: 600;
+letter-spacing: 3px;
+}
+.contact ul
+{
+  position: relative;
+}
+.contact ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact ul li .icon
+{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+.contact ul li span
+{
+  color: #fff;
+  font-size: 0.4cm;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 0.5cm;
+}
+
+.container .right
+{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about
+{
+  margin-bottom: 50px;
+}
+.about:last-child
+{
+  margin-bottom: 0;
+}
+.abttitle
+{
+  font-size: 0.7cm;
+  color: #000000;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.educ
+{
+  padding-top: 48px;
+}
+.edctitle
+{
+font-size: 0.7cm;
+color: #000000;
+font-weight: 600;
+letter-spacing: 3px;
+}
+.schname
+{
+font-size: 0.5cm;
+font-weight: 600;
+}
+.educ p
+{
+  font-size:0.4cm
+}
+.interest
+{
+  padding-top: 50px;
+}
+.inttitle
+{
+font-size: 0.7cm;
+color: #000000;
+font-weight: 600;
+letter-spacing: 3px;
+}
+.interest ul
+{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.interest ul li
+{
+list-style: none;
+font-weight: 500;
+margin: 10px 0;
+font-size: 0.4cm;
+margin-top: 5px;
+font-weight: 700;
+line-height: 0.5cm;
+}
+.interest ul li .fa
+{
+display: inline-block;
+font-size: 18px;
+width: 20px;
+}
+
+@media (max-width: 1000px)
+{
+  .container
+  {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .interest ul
+  {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 600px)
+{
+  .interest ul
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
